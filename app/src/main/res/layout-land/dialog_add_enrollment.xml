@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:paddingBottom="7dp"
+            android:backgroundTint="@color/black"
+            android:visibility="gone"
+            android:src="@drawable/ic_cancle" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingDefaultResource">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/m16dp">
+
+            <TextView
+                android:id="@+id/txt_follow_up_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Enrollment"
+                android:textColor="@color/fontColor1"
+                android:textSize="@dimen/f16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m16dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From date"
+                        android:textColor="@color/fontColor3"
+                        android:textSize="@dimen/f12sp" />
+
+                    <EditText
+                        android:id="@+id/edt_from_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edt_background"
+                        android:focusable="false"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="dd/mm/yyyy"
+                        android:padding="@dimen/p10dp"
+                        android:textColor="@color/fontColor1"
+                        android:textSize="@dimen/f16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="To date"
+                        android:textColor="@color/fontColor3"
+                        android:textSize="@dimen/f12sp" />
+
+                    <EditText
+                        android:id="@+id/edt_to_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edt_background"
+                        android:focusable="false"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="dd/mm/yyyy"
+                        android:padding="@dimen/p10dp"
+                        android:textColor="@color/fontColor1"
+                        android:textSize="@dimen/f16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m16dp"
+                android:text="Batch Time"
+                android:textColor="@color/fontColor3"
+                android:textSize="@dimen/f12sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m45dp"
+                android:layout_marginTop="@dimen/p5dp"
+                android:background="@drawable/edt_background">
+
+                <Spinner
+                    android:id="@+id/spn_batch_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Course"
+                    android:textColor="@color/fontColor3"
+                    android:textSize="@dimen/f14sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvDialogCourseList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/recycler_course_list" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m16dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Course Fees"
+                        android:textColor="@color/fontColor3"
+                        android:textSize="@dimen/f12sp" />
+
+                    <EditText
+                        android:id="@+id/edt_course_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edt_background"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Amount"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:padding="@dimen/p10dp"
+                        android:textColor="@color/fontColor1"
+                        android:textSize="@dimen/f16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/view_pay_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pay Amount"
+                        android:textColor="@color/fontColor3"
+                        android:textSize="@dimen/f12sp" />
+
+                    <EditText
+                        android:id="@+id/edt_pay_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edt_background"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="Amount"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:padding="@dimen/p10dp"
+                        android:textColor="@color/fontColor1"
+                        android:textSize="@dimen/f16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m16dp"
+                android:text="Select Fees Option"
+                android:textColor="@color/fontColor3"
+                android:textSize="@dimen/f12sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdb_full_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paid In Full"
+                    android:textColor="@color/fontColor1"
+                    android:textSize="@dimen/f16sp" />
+
+                <RadioButton
+                    android:id="@+id/rdb_part_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Part Payment"
+                    android:textColor="@color/fontColor1"
+                    android:textSize="@dimen/f16sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m16dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edt_background"
+                    android:fontFamily="@font/poppins_medium"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:includeFontPadding="false"
+                    android:paddingHorizontal="@dimen/m16dp"
+                    android:text="Close"
+                    android:textColor="@color/fontColor1"
+                    android:textSize="@dimen/f14sp" />
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/m10dp"
+                    android:background="@drawable/edt_background"
+                    android:backgroundTint="@color/color_primary"
+                    android:fontFamily="@font/poppins_medium"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:includeFontPadding="false"
+                    android:paddingHorizontal="@dimen/m16dp"
+                    android:text="Confirm"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/f14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

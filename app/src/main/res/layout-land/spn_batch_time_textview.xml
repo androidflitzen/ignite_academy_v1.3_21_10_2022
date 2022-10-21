@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="@font/poppins_medium"
+    android:paddingVertical="10dp"
+    android:text="Hello"
+    android:textColor="@color/fontColor1"
+    android:textSize="@dimen/f16sp"
+    tools:ignore="MissingDefaultResource">
+
+</TextView>

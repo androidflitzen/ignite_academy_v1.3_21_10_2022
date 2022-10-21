@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Keval/Android Studio Projects/IgniteAcademy/app/src/main/res/layout-land/activity_enquiry_details.xml" value="0.22" />
+        <entry key="..\:/Users/Keval/Android Studio Projects/IgniteAcademy/app/src/main/res/layout-land/activity_enrollment_detail.xml" value="0.35782442748091603" />
+        <entry key="..\:/Users/Keval/Android Studio Projects/IgniteAcademy/app/src/main/res/layout-land/activity_login.xml" value="0.18" />
+        <entry key="..\:/Users/Keval/Android Studio Projects/IgniteAcademy/app/src/main/res/layout-land/dialog_document.xml" value="0.4427083333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

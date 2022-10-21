@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Fragment.AddNewEnquiryFragment"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivHeader"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_header2" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:paddingLeft="@dimen/m10dp"
+                android:text="Enquiry Form"
+                android:textColor="@color/white"
+                android:textSize="@dimen/f22sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/m16dp">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="New Enquiry"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/f20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m16dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_background"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/p10dp"
+                    android:textColor="@color/fontColor1"
+                    android:textSize="@dimen/f16sp" />
+
+                <EditText
+                    android:maxLength="10"
+                    android:id="@+id/edtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/m16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_background"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Phone"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:padding="@dimen/p10dp"
+                    android:textColor="@color/fontColor1"
+                    android:textSize="@dimen/f16sp" />
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/m16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_background"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/p10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/fontColor1"
+                    android:textSize="@dimen/f16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/edtCity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_background"
+                    android:fontFamily="@font/poppins"
+                    android:hint="City"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textColor="@color/fontColor1"
+                    android:textSize="@dimen/f16sp" />
+            </LinearLayout>
+
+            <!--Course-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Course"
+                    android:textColor="@color/fontColor3"
+                    android:textSize="@dimen/f14sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCourseList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/recycler_course_list" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="Gender: "
+                        android:textColor="@color/fontColor3"
+                        android:textSize="@dimen/f14sp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdb_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:includeFontPadding="false"
+                            android:text="Male"
+                            android:textColor="@color/fontColor1"
+                            android:textSize="@dimen/f16sp" />
+
+                        <RadioButton
+                            android:id="@+id/rdb_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:includeFontPadding="false"
+                            android:text="Female"
+                            android:textColor="@color/fontColor1"
+                            android:textSize="@dimen/f16sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edtCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_background"
+                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:focusable="false"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Country"
+                    android:padding="10dp"
+                    android:textColor="@color/fontColor1"
+                    android:textSize="@dimen/f16sp" />
+
+                <EditText
+                    android:id="@+id/edtDob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/m16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_background"
+                    android:focusable="false"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Date Of Birth"
+                    android:padding="10dp"
+                    android:text="@null"
+                    android:textColor="@color/fontColor1"
+                    android:textSize="@dimen/f16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/edtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_background"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="top"
+                    android:hint="Address"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:lines="3"
+                    android:padding="10dp"
+                    android:textColor="@color/fontColor1"
+                    android:textSize="@dimen/f16sp" />
+
+                <EditText
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/edtRemark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_background"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="top"
+                    android:hint="Remark"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:lines="3"
+                    android:padding="10dp"
+                    android:textColor="@color/fontColor1"
+                    android:textSize="@dimen/f16sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/m16dp"
+                android:layout_marginBottom="@dimen/m10dp"
+                android:background="@drawable/edt_background"
+                android:backgroundTint="@color/color_primary"
+                android:fontFamily="@font/poppins_bold"
+                android:foreground="?attr/selectableItemBackground"
+                android:includeFontPadding="false"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/f18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

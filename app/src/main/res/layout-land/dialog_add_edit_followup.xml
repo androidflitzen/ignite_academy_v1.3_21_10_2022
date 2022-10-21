@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="@dimen/m16dp"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/txt_follow_up_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Add Follow Up"
+        android:textColor="@color/fontColor1"
+        android:textSize="@dimen/f16sp" />
+
+    <EditText
+        android:id="@+id/edtRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/m16dp"
+        android:background="@drawable/edt_background"
+        android:fontFamily="@font/poppins"
+        android:hint="Type here"
+        android:inputType="textCapWords|textMultiLine"
+        android:padding="@dimen/p10dp"
+        android:textColor="@color/fontColor1"
+        android:textSize="@dimen/f16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/m16dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_background"
+            android:fontFamily="@font/poppins_medium"
+            android:foreground="?attr/selectableItemBackground"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="@dimen/m16dp"
+            android:text="Close"
+            android:textColor="@color/fontColor1"
+            android:textSize="@dimen/f14sp" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/m10dp"
+            android:background="@drawable/edt_background"
+            android:backgroundTint="@color/color_primary"
+            android:fontFamily="@font/poppins_medium"
+            android:foreground="?attr/selectableItemBackground"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="@dimen/m16dp"
+            android:text="Add Follow Up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/f14sp" />
+    </LinearLayout>
+</LinearLayout>

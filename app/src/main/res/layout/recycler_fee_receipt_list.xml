@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="3dp"
+        android:layout_marginBottom="@dimen/f12sp"
+        app:cardElevation="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:text="Date"
+                    android:textColor="@color/fontColor3"
+                    android:textSize="@dimen/f12sp" />
+
+                <ImageView
+                    android:id="@+id/ivEditFee"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:paddingHorizontal="10dp"
+                    android:src="@drawable/ic_edit_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="$$"
+                    android:textColor="@color/fontColor1"
+                    android:textSize="@dimen/f16sp" />
+
+                <ImageView
+                    android:id="@+id/ivImagePdf"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_pdf"
+                    android:textColor="@color/fontColor1"
+                    android:textSize="@dimen/f16sp" />
+
+<!--                 <ImageView-->
+<!--                    android:id="@+id/ivImage"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:src="@drawable/ic_pdf"-->
+<!--                    android:textColor="@color/fontColor1"-->
+<!--                    android:textSize="@dimen/f16sp" />-->
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_created_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="right"
+                android:text="hello"
+                android:textColor="@color/fontColor3"
+                android:textSize="@dimen/f12sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

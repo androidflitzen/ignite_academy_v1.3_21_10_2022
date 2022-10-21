@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="@dimen/m16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txt_fee_payment_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Pay Fee"
+            android:textColor="@color/fontColor1"
+            android:textSize="@dimen/f16sp" />
+
+        <TextView
+            android:gravity="right"
+            android:layout_weight="1"
+            android:id="@+id/tvTotalFeeAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text=""
+            android:textColor="@color/fontColor3"
+            android:textSize="@dimen/f16sp" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edtFee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/m16dp"
+        android:background="@drawable/edt_background"
+        android:fontFamily="@font/poppins"
+        android:hint="Fee amount"
+        android:inputType="number"
+        android:padding="@dimen/p10dp"
+        android:textColor="@color/fontColor1"
+        android:textSize="@dimen/f16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/m16dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_background"
+            android:fontFamily="@font/poppins_medium"
+            android:foreground="?attr/selectableItemBackground"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="@dimen/m16dp"
+            android:text="Close"
+            android:textColor="@color/fontColor1"
+            android:textSize="@dimen/f14sp" />
+
+        <Button
+            android:id="@+id/btnPayFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/m10dp"
+            android:background="@drawable/edt_background"
+            android:backgroundTint="@color/color_primary"
+            android:fontFamily="@font/poppins_medium"
+            android:foreground="?attr/selectableItemBackground"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="@dimen/m16dp"
+            android:text="pay Fee"
+            android:textColor="@color/white"
+            android:textSize="@dimen/f14sp" />
+    </LinearLayout>
+</LinearLayout>

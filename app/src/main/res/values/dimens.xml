@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--dimen in Dp-->
+    <dimen name="m10dp">10dp</dimen>
+    <dimen name="m15dp">15dp</dimen>
+    <dimen name="m16dp">16dp</dimen>
+    <dimen name="m20dp">20dp</dimen>
+    <dimen name="m25dp">25dp</dimen>
+    <dimen name="m30dp">30dp</dimen>
+    <dimen name="m35dp">35dp</dimen>
+    <dimen name="m40dp">40dp</dimen>
+    <dimen name="m45dp">45dp</dimen>
+    <dimen name="m50dp">50dp</dimen>
+    <dimen name="m55dp">55dp</dimen>
+    <dimen name="m60dp">60dp</dimen>
+
+    <!-- Dimen for Font-->
+    <dimen name="f8sp">8sp</dimen>
+    <dimen name="f10sp">10sp</dimen>
+    <dimen name="f11sp">11sp</dimen>
+    <dimen name="f12sp">12sp</dimen>
+    <dimen name="f14sp">14sp</dimen>
+    <dimen name="f15sp">15sp</dimen>
+    <dimen name="f16sp">16sp</dimen>
+    <dimen name="f17sp">17sp</dimen>
+    <dimen name="f18sp">18sp</dimen>
+    <dimen name="f19sp">19sp</dimen>
+    <dimen name="f20sp">20sp</dimen>
+    <dimen name="f22sp">22sp</dimen>
+    <dimen name="f24sp">24sp</dimen>
+    <dimen name="f26sp">26sp</dimen>
+
+    <!--Dimen Padding-->
+    <dimen name="p5dp">5dp</dimen>
+    <dimen name="p7dp">7dp</dimen>
+    <dimen name="p8dp">8dp</dimen>
+    <dimen name="p9dp">9dp</dimen>
+    <dimen name="p10dp">10dp</dimen>
+    <dimen name="p12dp">12dp</dimen>
+    <dimen name="p15dp">15dp</dimen>
+
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="default_padding_half">8dp</dimen>
+
+    <dimen name="divider">1dp</dimen>
+
+    <dimen name="actionbar_icon_padding">15dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="dashboard_card_padding">10dp</dimen>
+</resources>
